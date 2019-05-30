@@ -1,0 +1,10 @@
+<h2 class ='text-center text-primary'>Here's a great choice of restaurants: </h2>
+<% @restaurants.each do |restaurant| %>
+<div class='card'>
+<p class = 'text-center bg-light panel-info'><%= restaurant.name %>
+</p>
+
+<button type="button" class= 'btn btn-outline-success'><%= link_to 'See details', restaurant_path(restaurant)%></button></p>
+</div>
+<% end %>
+
